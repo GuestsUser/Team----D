@@ -54,5 +54,9 @@ public class MoveGround : MonoBehaviour
             // X軸を基準に回転させる
             transform.Rotate(new Vector3(vertical * rotationSpeed, 0, 0));
         }
+        if (horizontal == 0)
+        {
+            transform.Rotate(new Vector3(0, 0, Mathf.LerpAngle(currentZAngle, 0, 0)));
+        }
     }
 }
