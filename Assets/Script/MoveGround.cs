@@ -17,7 +17,7 @@ public class MoveGround : MonoBehaviour
     private float rotationSpeed = -1;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // 左右キーの入力を取得
         float horizontal = Input.GetAxis("Horizontal")*-1;
@@ -54,9 +54,9 @@ public class MoveGround : MonoBehaviour
             // X軸を基準に回転させる
             transform.Rotate(new Vector3(vertical * rotationSpeed, 0, 0));
         }
-        if (horizontal == 0)
-        {
-            transform.Rotate(new Vector3(0, 0, Mathf.LerpAngle(currentZAngle, 0, 0)));
-        }
+        //if (horizontal == 0)
+        //{
+        //    transform.Rotate(new Vector3(0, 0, Mathf.LerpAngle(currentZAngle, 0, 0)));
+        //}
     }
 }
