@@ -16,6 +16,7 @@ public class UI_pause : MonoBehaviour
     [SerializeField]
     private GameObject pauseUI;
 
+    public object Button1 { get; private set; }
 
     private void Start(){ pauseUI.SetActive(false); }
 
@@ -25,6 +26,7 @@ public class UI_pause : MonoBehaviour
     {
         if (Input.GetKeyDown("joystick button 7"))
         {
+         
             pauseUI.SetActive(!pauseUI.activeSelf);
             i = (i + 1) % 2;
         }
