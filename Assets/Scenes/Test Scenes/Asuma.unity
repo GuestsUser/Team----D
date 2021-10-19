@@ -946,8 +946,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_target: {fileID: 150822090}
-  m_speed: 5
-  m_waitRange: 15
+  m_speed: 0
+  m_waitRange: 0.15
 --- !u!1 &1085398383
 GameObject:
   m_ObjectHideFlags: 0
