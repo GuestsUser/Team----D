@@ -1031,7 +1031,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0632603, y: 1}
+    m_SensorSize: {x: 2.164151, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1163,6 +1163,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 167788325719688105, guid: 83b3700435cbbeb4cb138b9a2478c366,
     type: 3}
   m_PrefabInstance: {fileID: 742467297}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1184299571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6843273994735271518, guid: 8d534fca44bbb064a8b9e316ab29f559,
+    type: 3}
+  m_PrefabInstance: {fileID: 383693696}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1332220218
 GameObject:
@@ -1514,6 +1520,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1540438828}
   m_CullTransparentMesh: 0
+--- !u!1 &1598394165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1598394167}
+  - component: {fileID: 1598394166}
+  m_Layer: 0
+  m_Name: CoinPlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1598394166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598394165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63a053db495ef24aa11cab7271e73e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1184299571}
+  coin: {fileID: 4044507637553934005, guid: 82de53906e174b34099122330e28d4a2, type: 3}
+  radius: 5
+--- !u!4 &1598394167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598394165}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1661889066
 GameObject:
   m_ObjectHideFlags: 0

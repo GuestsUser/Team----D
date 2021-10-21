@@ -18,7 +18,7 @@ public class MoveGround : MonoBehaviour
 
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         // 左右キーの入力を取得
         float horizontal = Input.GetAxis("Horizontal")*-1;
