@@ -57,7 +57,7 @@ public class MoveGround : MonoBehaviour
         //現在の角度が最大角度以上かつ0より大きいかつキー入力がない時
         if (currentZAngle <= MaxAngle+1 && currentZAngle > 0 && horizontal == 0)
         {
-            transform.Rotate(new Vector3(0, 0, -0.4f * rotationSpeed));
+            transform.Rotate(new Vector3(0,0, -0.4f * rotationSpeed));
             if (currentZAngle <0.5)
             {
                 transform.localRotation = Quaternion.Euler(new Vector3(transform.eulerAngles.x, transform.eulerAngles.y, 0));
@@ -97,6 +97,6 @@ public class MoveGround : MonoBehaviour
                 currentXAngle = 0;
             }
         }
-       
+
     }
 }
